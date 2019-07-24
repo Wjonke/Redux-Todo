@@ -4,7 +4,7 @@ import { ADD_TODO, TOGGLE_TODO, CLEAR_COMPLETED } from '../actions';
 export const initialState = {
   todos: [
     {
-      name: 'Learn about reducers',
+      name: 'Learn about Redux',
       completed: false,
       id: '000001'
     },
@@ -23,6 +23,7 @@ export const initialState = {
 
 export const todosReducer = (state = initialState, action) => {
   switch (action.type) {
+
     case ADD_TODO:
       const newTodo = {
         name: action.payload,

@@ -11,8 +11,10 @@ const Todos = (props) => {
 
   return (
     <div>
-      {props.todos.map(todo => (
+    console.log(props)
 
+      {props.todos.map(todo => (
+        
         <li
         style={ todo.completed ? style: null}
         onClick={() => props.toggleTodo(todo.id)}
