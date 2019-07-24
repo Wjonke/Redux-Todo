@@ -7,11 +7,11 @@ import { toggleTodo } from '../actions';
 const style ={textDecoration: 'line-through'};
 
 const Todos = (props) => {
-
+console.log(props);
 
   return (
     <div>
-    console.log(props)
+    
 
       {props.todos.map(todo => (
         
@@ -21,7 +21,8 @@ const Todos = (props) => {
         key={todo.id}
         >
 
-        {todo.text}
+        {todo.name}
+        
 
         </li>
 

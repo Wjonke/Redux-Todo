@@ -29,19 +29,19 @@ Topics:
 * x create your store
 * x create your reducers
 * x create your containers
-* create the action creators.
+* x create the action creators.
 
 
-* When you add a new item to the todo array an action containing the new todo object will be dispatched through all of the reducers.
-* To display the todo list you will create a container that receives the `todos` array as a prop and then uses `map` to display it as an unordered list.
+* x When you add a new item to the todo array an action containing the new todo object will be dispatched through all of the reducers.
+* x To display the todo list you will create a container that receives the `todos` array as a prop and then uses `map` to display it as an unordered list.
 
 
 
 
 ### State Tree
 
-* Your application should have an input field, a submit button, and a list of items that represents your todo list.
-* Your application's state tree should have a single property called `todos`. It should take the same form as the object shown below.
+* x Your application should have an input field, a submit button, and a list of items that represents your todo list.
+* x Your application's state tree should have a single property called `todos`. It should take the same form as the object shown below.
 
 
 ```
@@ -52,7 +52,7 @@ Topics:
 
 
 
-* Each `todo` item that is in the `todos` array should have the following format:
+* x Each `todo` item that is in the `todos` array should have the following format:
 
 
 ```
@@ -65,7 +65,7 @@ Topics:
 
 
 
-* You will create your store in `src/index.js`. The `<Provider >` component will wrap `<App />` and you will pass the created store into `<Provider >` as one of its properties. Use [this](https://github.com/SunJieMing/redux-example-movies) repository as a reference.
+* x You will create your store in `src/index.js`. The `<Provider >` component will wrap `<App />` and you will pass the created store into `<Provider >` as one of its properties. Use [this](https://github.com/SunJieMing/redux-example-movies) repository as a reference.
 
 
 
@@ -76,8 +76,11 @@ Topics:
 ### React
 
 * When you type a new todo list item into the input field and press the submit button you should call an action creator that adds a new todo item to the `todos` array on the application state tree.
+
 * When the user presses submit you will invoke the appropriate action creator which will then have its new action fed through all of the reducers.
+
 * You will display the todo list by creating a container that receives the application's `todos` array as a prop. That container then uses `map` to display the array.
+
 * When you click on each todo list item you will dispatch an action that will toggle that todo item's `completed` property to either `true` or `false`. You will need to send the `id` property along with what `completed` should be set to. The `todos` reducer will return a brand new array that will replace the old array. We do not mutate the original array but rather replace it with a brand new version.
 
 
