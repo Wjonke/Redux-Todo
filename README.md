@@ -28,7 +28,7 @@ Topics:
 
 * x create your store
 * x create your reducers
-*  create your containers
+* x create your containers
 * create the action creators.
 
 

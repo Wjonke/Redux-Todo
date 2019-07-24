@@ -1,6 +1,9 @@
 import React from 'react';
 
 
+import Todos from './components/Todos';
+import AddTodoForm from './components/AddTodoForm';
+
 import './App.css';
 
 
@@ -16,7 +19,7 @@ function App() {
     <div className="App">
      
 
-     <h1> Coming Soon!</h1>
+     
     </div>
   );
 }
