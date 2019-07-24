@@ -27,8 +27,8 @@ Topics:
 * The general flow of steps will be to:
 
 * x create your store
-* create your reducers
-* create your containers
+* x create your reducers
+*  create your containers
 * create the action creators.
 
 
